@@ -1,20 +1,43 @@
+
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <link rel="icon" href="../../favicon.ico">
-    </head>
-    <body>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-md-offset-4">
-                    asdf
-                </div>
-            </div>
-        </div>
-    </body>
+<html>
+<head>
+    <style>
+        body {
+            height: 10000vh; /* Set body height to 100% of the viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: black;
+            color: white;
+        }
+        img {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+            border: 5px solid white;
+            opacity: 0; /* Set initial opacity to 0 */
+        }
+
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+    Testing2
+    <script>
+        fetch('README.md')
+        .then(response => response.text())
+        .then(text => {
+            console.log(text)
+        });
+    </script>
+</body>
 </html>
